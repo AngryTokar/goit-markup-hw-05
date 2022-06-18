@@ -46,7 +46,7 @@
 		<section class="section hero">
 			<div class="container">
 				<h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-				<button class="hero-button" type="button">Заказать услугу</button>
+				<button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
 			</div>
 		</section>
 		<!--Наши преимущества-->
@@ -105,15 +105,30 @@
 				<h2 class="chapter-work">Чем мы занимаемся</h2>
 				<ul class="chapter-list list">
 					<li class="chapter-item">
-						<img src="./images/our_works/img.jpg" alt="Блок-схема. Руки печатают на клавиатуре" width="370" />
+						<div class="chapter-foto">
+							<img src="./images/our_works/img.jpg" alt="Блок-схема. Руки печатают на клавиатуре" width="370" />
+							<div class="chapter-overlal">
+								<h3 class="overlay-text">Десктопные приложения</h3>
+							</div>
+						</div>
 					</li>
 					<li class="chapter-item">
-						<img src="./images/our_works/img_(1).jpg"
-							alt="Телефон в руках перед ноутбуком,на экране которого фотографии экрана телефона" width="370" />
+						<div class="chapter-foto">
+							<img src="./images/our_works/img_(1).jpg"
+								alt="Телефон в руках перед ноутбуком,на экране которого фотографии экрана телефона" width="370" />
+							<div class="chapter-overlal">
+								<h3 class="overlay-text">Мобильные приложения</h3>
+							</div>
+						</div>
 					</li>
 					<li class="chapter-item">
-						<img src="./images/our_works/img_(2).jpg" alt="Планшет в левой руке. На экране планета палитра цветов."
-							width="370" />
+						<div class="chapter-foto">
+							<img src="./images/our_works/img_(2).jpg" alt="Планшет в левой руке. На экране планета палитра цветов."
+								width="370" />
+							<div class="chapter-overlal">
+								<h3 class="overlay-text">Дизайнерские решения</h3>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -355,7 +370,17 @@
 				</ul>
 			</div>
 		</div>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button type="button" class="modal-close-btn" data-modal-close>
+					<svg Width="18" Height="18">
+						<use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
 	</footer>
+	<script src="./js/modal.js"></script>
 </body>
 
 </html>
